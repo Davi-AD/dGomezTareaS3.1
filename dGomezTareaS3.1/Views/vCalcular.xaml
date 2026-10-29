@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dGomezTareaS3._1.Views.vCalcular"
+             Title="vCalcular">
+    <VerticalStackLayout>
+        <Label 
+            Text="DATOS CALCULADOS"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label
+            Text="Nombre:"
+            FontAttributes="Italic"></Label>
+        <Label
+            x:Name="lblNombre"></Label>
+        <Label
+            Text="Apellido:"
+            FontAttributes="Italic"></Label>
+        <Label
+            x:Name="lblApellido"></Label>
+        <Label
+            Text="Fecha: "
+            FontAttributes="Italic"></Label>
+        <Label
+            x:Name="lblFecha"></Label>
+        <Label
+            Text="Correo:"
+            FontAttributes="Italic"></Label>
+        <Label
+            x:Name="lblCorreo"></Label>
+        <Label
+            Text="Salario:"
+            FontAttributes="Italic"></Label>
+        <Label
+            x:Name="lblSalario"></Label>
+        <Label
+            Text="Aporte al iess:"
+            FontAttributes="Italic"
+            TextColor="Red"></Label>
+        <Label
+            x:Name="lblAporte"
+            TextColor="Red"
+            FontSize="20"></Label>
+    </VerticalStackLayout>
+</ContentPage>

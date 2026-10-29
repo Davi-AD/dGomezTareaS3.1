@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dGomezTareaS3._1.Views.vLogin"
+             Title="vLogin">
+    <VerticalStackLayout>
+        <Label 
+            Text="DATOS: Aporte del IEES"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image
+            Source="dotnet_bot.png"
+            WidthRequest="300"></Image>
+        <Border Stroke="SkyBlue">
+            <Picker x:Name="pkIdendificacion"
+                    Title="Selecione identificacion"
+                    SelectedIndexChanged="pkIdendificacion_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Cedula</x:String>
+                    <x:String>RUC</x:String>
+                    <x:String>Pasaporte</x:String>
+                </Picker.Items>
+            </Picker>
+        </Border>
+        <Entry x:Name="txtIdentificacion"
+               Placeholder="Ingresa tu Identificacion:"
+               Keyboard="Numeric"
+               IsEnabled="False"
+               TextChanged="txtIdentificacion_TextChanged"
+            ></Entry>
+        <Entry x:Name="txtNombre"
+               Placeholder="Ingresa tu nombre"
+               ></Entry>
+        <Entry x:Name="txtApellido"
+               Placeholder="Ingresa tu Apellido"
+               ></Entry>
+        <DatePicker
+            x:Name="DpFecha"
+            Date="12/31/2026"
+            Format="MM/dd/yyyy"></DatePicker>
+        <Entry x:Name="txtCorreo"
+               Placeholder="Ingresa tu Correo"
+               ></Entry>
+        <Entry x:Name="txtSalario"
+               Placeholder="Ingresa tu Salario"
+               Keyboard="Numeric"
+               ></Entry>
+        <Button x:Name="btnCalcular"
+                Text="Calcular aporte al IESS"
+                Clicked="btnCalcular_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>
